@@ -11,7 +11,7 @@ let minhaImagem = document.querySelector('img');
 minhaImagem.onclick = function() {
     let meuSrc = minhaImagem.getAttribute('src');
     if(meuSrc === 'img/cat.png') {
-      minhaImagem.setAttribute ('src','img/luua.png');
+      minhaImagem.setAttribute ('src','img/lua.png');
     } else {
       minhaImagem.setAttribute ('src','img/cat.png');
     }
