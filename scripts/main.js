@@ -32,4 +32,3 @@ function defineNomeUsuario() {
 
 meuBotao.onclick = function() { defineNomeUsuario();
 }
-  
