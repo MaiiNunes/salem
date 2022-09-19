@@ -17,44 +17,45 @@ h1 {
   text-shadow: 2px 2px 5px #cbf8e3;
 }
 
-ol {
-    color: #866abe;
-    text-align: center;
-    font-size: 24px;
-    line-height: 2;
-  }
+#p2 {
+  color: #866abe;
+  text-align: center;
+  font-size: 24px;
+  line-height: 2;
+}
 
 h1 {
-    color: #56dd9c;
-    font-family: "Sofia", sans-serif;
-    font-size: 46px;
-    text-align: center;
-    line-height: 2;
-    letter-spacing: 1px;
-  }
+  color: #56dd9c;
+  font-family: "Sofia", sans-serif;
+  font-size: 46px;
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 1px;
+}
 
 p {
-    color: #ecda8b;
-    font-family: "Merriweather", sans-serif;
-  }
+  color: #ecda8b;
+  font-family: "Merriweather", sans-serif;
+}
 
 a {
-    color: #ffdc40;
-    font-family: "Merriweather", sans-serif;
-  }
+  color: #ffdc40;
+  font-family: "Merriweather", sans-serif;
+}
 
 li {
-    color: #ecda8b;
-    font-family: "Merriweather", sans-serif;
-  }
+  color: #ecda8b;
+  font-family: "Merriweather", sans-serif;
+}
 
 img {
-    display: block;
-    margin: auto;
-  }
+  display: block;
+  margin: auto;
+}
 
 h2 {
   color: #ecda8b;
+  font-family: "Merriweather", sans-serif;
   font-size: 18px;
   text-align: center;
   line-height: 4;
@@ -64,4 +65,4 @@ h2 {
   background-color: #010114fa;
   padding: 0 5px 2px 2px;
   border: 2px solid #ecda8b;
-  }
+}
