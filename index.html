@@ -1,40 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
-
-    <!-- ↓ É utilizada para comunicar aos navegadores o formato de codificação de caracteres utilizado dentro do documento. --> 
-    <meta charset="utf-8">
-
-    <title>Salém</title>
-   
+    <meta charset="utf-8"> <!-- ↓ É utilizada para comunicar aos navegadores o formato de codificação de caracteres utilizado dentro do documento. --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- adaptação de tela para celular, laptop -->
+    <title>Salém</title> <!-- título --> 
     <!-- Css. --> 
-      <link href="css/estilo.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
-    <!-- favicon Js. -->
-      <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
-
+    <link href="css/estilo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" /> <!-- favicon Js. -->
   </head>
 
   <body>
-    <!-- Botão de usúario. --> 
-    <button>Mudar usuário</button>
-   
-    <h1 class="font-effect-neon">Salém Responde!</h1>
-    <p>Você pode ter um gatinho virtual que conversa com você.</p>
+    <div class="flex-container"><button class="button">Mudar usuário</button></div> <!-- Botão de usúario. --> 
+    <div class="flex-container" id="menu">
+      <h1 class="font-effect-neon">Salém Responde!</h1>
+      <p class="texto">Você pode ter um gatinho virtual que conversa com você.</p>
+      <ul class="texto">
+        <li>Inicie uma conversa;</li>
+        <li>Faça perguntas;</li>
+        <li>Peça opiniões.</li>
+        <li>Tire dúvidas;</li>
+      </ul>
+      <h2> Inicie sua conversa ou tire sua dúvida com salém.</h2>
 
-    <ul>
-      <li>Faça perguntas;</li>
-      <li>Inicie uma conversa;</li>
-      <li>Tire dúvidas;</li>
-      <li>Peça opiniões.</li>
-    </ul>
+     <div>
+        <img src="img/cat.png" alt=" img teste">
+      </div>
 
-    <p class="p2"> Inicie sua conversa ou tire sua dúvida com salém.</p>
-    <img src="img/cat.png" alt=" img teste">
-  
-    <h2> Para saber mais <a class="a" href="https://forms.gle/d3CNXQWQUoJzCZUt7" target="_blank"> Clique aqui!</a></h2>  
-  
+      <div>
+        <h3 class="texto" id="menu"> Para saber mais...<a class="a" href="https://forms.gle/d3CNXQWQUoJzCZUt7" target="_blank">Clique aqui!</a>
+      </div> 
+
+    </div>
+
+    <footer>
+      <div class="flex-containe footer">
+        <p>&copy; 2021 Salém</p>
+        <p> Dev: Maísa Talita Nunes.</p> 
+      </div>
+    </footer>
+    
   </body>
   <script src="scripts/main.js"></script>
 </html>

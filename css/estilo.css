@@ -1,67 +1,161 @@
 html {
   background-color: #010114fa;
+  padding: 0;
+  margin: 0;
 }
 
-body {
-  width: 600px;
+.button {
+  background-color: #18184efa;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  border-color: #ffba5b;
+  width: 130px;
+  display: block;
+  text-decoration: none;
+  height: 35px;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 992px;
+  margin: auto;
+  width: 100%;
+  min-width: 320px;
+  text-align: center;
+}
+
+#menu {
+  display: flex;
+  width: 100%;
   margin: 0 auto;
   background-color: #101022fa;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 20px 20px; 
+  min-width: 320px;
   border: 5px solid #ffba5b;
+  
 }
 
+
 h1 {
-  color: #56dd9c;
+  display: flex;
+  color: #55e29e;
   font-family: "Sofia", sans-serif;
   font-size: 46px;
   text-align: center;
   line-height: 2;
   letter-spacing: 1px;
 
-  margin: 0;
-  padding: 20px 0;
   color: #cbf8e3;
   text-shadow: 2px 2px 5px #cbf8e3;
 }
 
-p {
+.texto {
+  text-align: center;
   color: #ecda8b;
   font-family: "Merriweather", sans-serif;
 }
 
-.p2 {
+h2 {
+  display: flex;
   color: #866abe;
+  font-family: "Merriweather", sans-serif;
   text-align: center;
   font-size: 18px;
   line-height: 2;
 }
 
-.a {
-  color: #ffdc40;
-  font-family: "Merriweather", sans-serif;
-  font-size: 16px;
+ul{
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 
 li {
-  color: #ecda8b;
-  font-family: "Merriweather", sans-serif;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
-img {
-  display: block;
-  margin: auto;
+ul li::before{
+  align-items: center;
+  border-radius: 30px;
+  width: 4px;
+  height: 4px;
+  background-color: #ffd82a86;
+  margin-right: 5px;
 }
 
-h2 {
+.a {
+  display: flex;
+  color: #ffdc40;
+  font-family: "Merriweather", sans-serif;
+  font-size: 15px;
+}
+
+/*h3 {
+  display: flex;
   color: #ecda8b;
   font-family: "Merriweather", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   text-align: center;
   line-height: 4;
-
-  width: 350px;
+  width: 100%;
   margin: 0 auto;
   background-color: #010114fa;
   padding: 0 5px 2px 2px;
   border: 2px solid #ecda8b;
+}*/
+
+img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+footer{
+  background-color: #4e545c3a;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+footer .footer{
+  justify-content: space-between;
+  color: #e5e8e881;
+  font-size: 12px;
+}
+
+/* mobile */
+@media(max-width:992px){
+  .flex-container{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #menu{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    max-width: 90%;
+    margin: 1% auto;
+    width: 100%;
+    margin-bottom: 20%;
+  }
+
+  img{
+    min-width: 320px;
+    margin: auto;
+    align-items: center;
+  }
+
+  footer{
+ 
+  }
+
 }
