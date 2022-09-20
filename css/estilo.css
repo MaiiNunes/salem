@@ -92,22 +92,21 @@ ul li::before{
 }
 
 .a {
-  display: flex;
   color: #ffdc40;
-  font-family: "Merriweather", sans-serif;
   font-size: 13px;
+  padding: 5px;
+
 }
 h3 {
-  display: flex;
+  display: block;
   color: #ecda8b;
   font-family: "Merriweather", sans-serif;
   font-size: 13px;
   text-align: center;
   line-height: 4;
-  width: 100%;
-  margin:  auto;
+  width: 200px;
   background-color: #010114fa;
-  padding: 1px;
+  padding: 5px 8px;
   border: 2px solid #ecda8b;
 }
 
