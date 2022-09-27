@@ -91,6 +91,15 @@ ul li::before{
   margin-right: 5px;
 }
 
+form {
+  display: flex;
+  color: #866abe;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  font-size: 18px;
+  line-height: 2;
+}
+
 .a {
   color: #ffdc40;
   font-size: 13px;

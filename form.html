@@ -1,0 +1,35 @@
+<!--Elemento que definiráum formulário
+
+    Atributos: 
+    -action = para aonde os dados vão.(se deixar vazio será enviado para a mesma página/ vai fazer o reload e vai conter os dados nela)
+    -method = GET:envia em formato de get, envia para o http e fica visível os dados(campo de pesquisa tranquilo usar get)o padrão é GET se não adicionar nenhum //POST: os dados são enviado para http mas ficam escondidos
+
+-->
+<form action="" method="post">
+    <fieldset> <!-- Agrupamento de campos-->
+        <legend>Dados</legend> <!-- Nome do agrupamento-->
+
+        <label for="name">Nome</label> <!-- Associa ou identifica a tag de entrada de dados-->
+        <input id="name" type="text" placeholder="Digite seu nome"> <!-- Caixa para envio de dados(Caixa de texto)-->
+        <button type="reset">Limpar</button> <!-- botão //type(adiciona atributos: Reset; Submit"enviar")// autofocus//name//value//form//disabled-->
+
+        <input type="text" list="frutfav" placeholder="Escolha uma fruta"/>
+        <datalist id="frutfav">
+            <option>Blueberry</option>
+            <option>Laranja</option>
+            <option>Uva</option>
+            <option>Abacate</option>
+            <option>Morango</option>
+        </datalist>
+
+        <datalist id="corfav">
+            <option>#0000ff</option>
+            <option>#ffff00</option>
+            <option>#800080</option>
+            <option>#008000</option>
+            <option>#ff0000</option>
+        </datalist>
+        <input type="color" list="corfav"/>
+
+    </fieldset>
+</form>
