@@ -58,13 +58,13 @@ h1 {
 .texto {
   text-align: center;
   color: #ecda8b;
-  font-family: "Merriweather", sans-serif;
+  font-family: "Merriweather", serif;
 }
 
 h2 {
   display: flex;
   color: #866abe;
-  font-family: "Merriweather", sans-serif;
+  font-family: "Merriweather", serif;
   text-align: center;
   font-size: 18px;
   line-height: 2;
@@ -100,7 +100,7 @@ ul li::before{
 h3 {
   display: block;
   color: #ecda8b;
-  font-family: "Merriweather", sans-serif;
+  font-family: "Merriweather", serif;
   font-size: 13px;
   text-align: center;
   line-height: 4;
