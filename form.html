@@ -1,9 +1,20 @@
-<!--Elemento que definiráum formulário
+<!--FORM- Elemento que definiráum formulário
 
     Atributos: 
     -action = para aonde os dados vão.(se deixar vazio será enviado para a mesma página/ vai fazer o reload e vai conter os dados nela)
     -method = GET:envia em formato de get, envia para o http e fica visível os dados(campo de pesquisa tranquilo usar get)o padrão é GET se não adicionar nenhum //POST: os dados são enviado para http mas ficam escondidos
 
+
+    ------
+    <input> Atributos comuns:
+
+    - autocomplete
+    - autofocus
+    - disable
+    - readonly
+    - value
+    - form
+    - name
 -->
 <form action="" method="post">
     <fieldset> <!-- Agrupamento de campos-->
@@ -13,7 +24,7 @@
         <input id="name" type="text" placeholder="Digite seu nome"> <!-- Caixa para envio de dados(Caixa de texto)-->
         <button type="reset">Limpar</button> <!-- botão //type(adiciona atributos: Reset; Submit"enviar")// autofocus//name//value//form//disabled-->
 
-        <input type="text" list="frutfav" placeholder="Escolha uma fruta"/>
+        <input type="text" list="frutfav" placeholder="Escolha uma fruta"/><!-- mais usado em formulário (type:date;number;email;file;password )-->
         <datalist id="frutfav">
             <option>Blueberry</option>
             <option>Laranja</option>
