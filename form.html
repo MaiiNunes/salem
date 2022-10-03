@@ -24,23 +24,51 @@
         <input id="name" type="text" placeholder="Digite seu nome"> <!-- Caixa para envio de dados(Caixa de texto)-->
         <button type="reset">Limpar</button> <!-- botão //type(adiciona atributos: Reset; Submit"enviar")// autofocus//name//value//form//disabled-->
 
-        <input type="text" list="frutfav" placeholder="Escolha uma fruta"/><!-- mais usado em formulário (type:date;number;email;file;password )-->
-        <datalist id="frutfav">
-            <option>Blueberry</option>
-            <option>Laranja</option>
-            <option>Uva</option>
-            <option>Abacate</option>
-            <option>Morango</option>
-        </datalist>
+        <label for="email">Login</label>
+        <input type="email" placeholder="Digite seu email" required
+        pattern=".+@gmail\@hotmail\@outlook\.com\.br">
+        <button type="submit">Enviar</button>
 
-        <datalist id="corfav">
-            <option>#0000ff</option>
-            <option>#ffff00</option>
-            <option>#800080</option>
-            <option>#008000</option>
-            <option>#ff0000</option>
+        <label for="password">Senha</label>
+        <input type="password" placeholder="Digite sua senha" pattern="[0-9a-zA-Z]{4,15}"
+        title="Digite no mínimo 4 caracteres e no máximo 15 caracteres. ">
+        <button type="submit">Enviar</button>
+
+        <label for="idade">Idade</label>
+        <input type="text" list="idade" placeholder="Selecione sua idade"/><!-- mais usado em formulário (type:date;number;email;file;password )-->
+        <datalist id="idade">
+            <option>7-12</option>
+            <option>13-17</option>
+            <option>18-24</option>
+            <option>25 + </option>
         </datalist>
-        <input type="color" list="corfav"/>
+        <button type="reset">Limpar</button>
+
+        <label for="color">Cor</label>
+        <input type="text" list="color" placeholder="Escolha uma cor" disabled>
+        <input type="color" list="color"/>
+
+        <legend>Escolha seu animal favorito!</legend>
+        <div>
+            <input type="checkbox" id="Gato" name="animal" value="Gato">
+            <label for="Gato">Gato</label>
+        </div>
+        <div>
+            <input type="checkbox" id="Cachorro" name="animal" value="Cachorro">
+            <label for="Cachorro">Cachorro</label>
+        </div>
+        <div>
+            <input type="checkbox" id="Passarinho" name="animal" value="Passarinho">
+            <label for="Passarinho">Passarinho</label>
+        </div>
+        <div>
+            <input type="checkbox" id="Outro" name="animal" value="Outro">
+            <label for="Outro">Outro</label>
+        </div>
+        <div>
+            <input id="outro" type="text" placeholder="outro:"> <!-- Caixa para envio de dados(Caixa de texto)-->
+            <button type="submit">Enviar</button>
+        </div>
 
     </fieldset>
 </form>
