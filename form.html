@@ -35,14 +35,23 @@
         <button type="submit">Enviar</button>
 
         <label for="idade">Idade</label>
-        <input type="text" list="idade" placeholder="Selecione sua idade"/><!-- mais usado em formulário (type:date;number;email;file;password )-->
+        <select name="idade" placeholder="Selecione sua idade">
+            <option value="">-</option>
+            <option value="7-12">7-12</option>
+            <option value="13-17">13-17</option>
+            <option value="18-24">18-24</option>
+            <option value="25 +">25 + </option>
+        </select>
+        
+        <!--<label for="idade">Idade</label>
+        <input type="text" list="idade" placeholder="Selecione sua idade"> /// mais usado em formulário (type:date;number;email;file;password )///
         <datalist id="idade">
             <option>7-12</option>
             <option>13-17</option>
             <option>18-24</option>
             <option>25 + </option>
         </datalist>
-        <button type="reset">Limpar</button>
+        <button type="reset">Limpar</button>-->
 
         <label for="color">Cor</label>
         <input type="text" list="color" placeholder="Escolha uma cor" disabled>
@@ -69,6 +78,12 @@
             <input id="outro" type="text" placeholder="outro:"> <!-- Caixa para envio de dados(Caixa de texto)-->
             <button type="submit">Enviar</button>
         </div>
+
+
+        <label for="questions">Fale com Salém!</label>
+        <textarea id="message" cols="40" rows="8" minlength="4" maxlength="335"
+        placeholder="Digite sua mensagem para o Salém aqui."></textarea>
+            <button type="submit">Enviar</button>
 
     </fieldset>
 </form>
