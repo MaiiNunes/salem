@@ -17,22 +17,29 @@
     - name
 -->
 <form action="" method="post">
+    <input type="search" name="q" placeholder="Campo de pesquisa"><!-- name="q"( q= searchterm, adiciona o x para apagar)-->
+        <button>Pesquisar
+    </button>
+
+    <fieldset>
+        <legend>Login</legend>
+
+        <label for="email">E-mail</label>
+        <input type="email" placeholder="Digite seu email" required
+        pattern=".+@gmail\@hotmail\@outlook\.com\.br">
+
+        <label for="password">Senha</label>
+        <input type="password" placeholder="Digite sua senha" pattern="[0-9a-zA-Z]{4,15}"
+        title="Digite no mínimo 4 caracteres e no máximo 15 caracteres. ">
+        <button type="submit">Enviar</button>
+    </fieldset>
+
     <fieldset> <!-- Agrupamento de campos-->
         <legend>Dados</legend> <!-- Nome do agrupamento-->
 
         <label for="name">Nome</label> <!-- Associa ou identifica a tag de entrada de dados-->
         <input id="name" type="text" placeholder="Digite seu nome"> <!-- Caixa para envio de dados(Caixa de texto)-->
         <button type="reset">Limpar</button> <!-- botão //type(adiciona atributos: Reset; Submit"enviar")// autofocus//name//value//form//disabled-->
-
-        <label for="email">Login</label>
-        <input type="email" placeholder="Digite seu email" required
-        pattern=".+@gmail\@hotmail\@outlook\.com\.br">
-        <button type="submit">Enviar</button>
-
-        <label for="password">Senha</label>
-        <input type="password" placeholder="Digite sua senha" pattern="[0-9a-zA-Z]{4,15}"
-        title="Digite no mínimo 4 caracteres e no máximo 15 caracteres. ">
-        <button type="submit">Enviar</button>
 
         <label for="idade">Idade</label>
         <select name="idade" placeholder="Selecione sua idade">
@@ -51,7 +58,12 @@
             <option>18-24</option>
             <option>25 + </option>
         </datalist>
-        <button type="reset">Limpar</button>-->
+        <button type="reset">Limpar</button>
+
+        (INPUT NUMBER) --- #Atributos: *min/max; *step="100"
+        <input type="number" min="1" max="50">
+    
+        -->
 
         <label for="color">Cor</label>
         <input type="text" list="color" placeholder="Escolha uma cor" disabled>
@@ -76,14 +88,48 @@
         </div>
         <div>
             <input id="outro" type="text" placeholder="outro:"> <!-- Caixa para envio de dados(Caixa de texto)-->
-            <button type="submit">Enviar</button>
         </div>
 
+        <label> Escolha um pet:
+            <select name="pets" multiple size="8">
+                <optgroup label="3- Mamiferos">
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Hamster">Hamster</option>
+                </optgroup>
+                <optgroup label="3 - Aves">
+                    <option value="Piriquito">Piriquito</option>
+                    <option value="Papagaio">Papagaio</option>
+                    <option value="Calopsita">Calopsita</option>
+                </optgroup>
+            </select>
+        </label>
+    </fieldset>
 
+    <fieldset>
+
+        <!--<legend> X </legend>-->
         <label for="questions">Fale com Salém!</label>
         <textarea id="message" cols="40" rows="8" minlength="4" maxlength="335"
         placeholder="Digite sua mensagem para o Salém aqui."></textarea>
-            <button type="submit">Enviar</button>
 
     </fieldset>
+
+    <label>Avalie o site de 1 à 5. ex: 1 sendo a nota mais baixa e 5 a mais alta.
+        <input type="range" min="1" max="5" step="1">
+    </label>
+
+    <!--
+        Outros campos (mas que ainda não tem um bom suporte em alguns browsers)
+        Ficar de olho em https://caniuse.com
+
+        <input type="datetime-local" value="yyyy-mm-dd">
+        <input type="month">
+        <input type="week">
+        <input type="time">
+     -->
+    <label>Data
+        <input type="date" value="yyyy-mm-dd">
+    </label>
+    <button type="submit">Enviar</button>
 </form>
