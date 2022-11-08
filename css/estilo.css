@@ -17,7 +17,9 @@ html {
 
 header{
   display: flex;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content:space-around;
 }
 
 h1 {
@@ -27,21 +29,20 @@ h1 {
   font-family: "Sofia", sans-serif;
   line-height: 2;
   letter-spacing: 1px;
-  justify-content: space-between;
 }
 
 .btn {
+  display:block;
+  white-space: nowrap;
   background-color: #18184efa;
   color: #fff;
-  display: block;
-  align-items: center;
   text-align: center;
   text-decoration: none;
   border-radius: 30px;
   border-color: #ffba5b;
   width: 130px;
   line-height: 35px;
-  margin-top: 10px;
+  justify-content: center;
 }
 
 #menu {
@@ -169,9 +170,4 @@ footer .footer{
     margin: auto;
     align-items: center;
   }
-
-  footer{
-    justify-content: space-between;
-  }
-
 }
