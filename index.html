@@ -19,47 +19,55 @@
         <button class="btn">Mudar usuário</button> <!-- Botão de usúario. --> 
     </header>
 
-    <div class="flex-container" id="menu">
-      <p class="texto">Você pode ter um gatinho virtual que conversa com você.</p>
-      <ul class="texto">
-        <li>Inicie uma conversa;</li>
-        <li>Faça perguntas;</li>
-        <li>Peça opiniões.</li>
-        <li>Tire dúvidas;</li>
-      </ul>
-      <h2> Inicie sua conversa ou tire sua dúvida com salém.</h2>
+    <main>
+      <div class="flex-container" id="menu">
 
-     <div>
-        <img src="img/cat.png" alt=" Cat Salém">
+
+        <h2> Inicie sua conversa ou tire sua dúvida com salém.</h2>
+
+        <div>
+          <img src="img/cat.png" alt=" Cat Salém">
+        </div>
+
+        <!--FORM FALTA EDITAR CSS DO FORM!-->
+        <form action="" method="post">
+          <fieldset> 
+            <legend>Contato</legend> 
+
+            <label for="name">Nome:</label> 
+            <input id="name" type="text" placeholder="Digite seu nome"> 
+            <br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" placeholder="Digite seu email" required
+            pattern=".+@gmail\@hotmail\@outlook\.com\.br">
+            <br>
+
+            <label for="questions">Fale com Salém!</label>
+            <br>
+            <textarea id="message" cols="40" rows="8" minlength="4" maxlength="335" placeholder="Digite sua mensagem para o Salém aqui."></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+          </fieldset>
+        </form>
+
+        <div>
+          <h3> Para saber mais...<a class="a" href="https://github.com/MaiiNunes" target="_blank">Clique aqui!</a>
+        </div> 
+
       </div>
-
-      <!--FORM FALTA EDITAR CSS DO FORM!-->
-      <form action="" method="post">
-        <fieldset> 
-          <legend>Contato</legend> 
-
-          <label for="name">Nome:</label> 
-          <input id="name" type="text" placeholder="Digite seu nome"> 
-          <br>
-
-          <label for="email">E-mail:</label>
-          <input type="email" placeholder="Digite seu email" required
-          pattern=".+@gmail\@hotmail\@outlook\.com\.br">
-          <br>
-
-          <label for="questions">Fale com Salém!</label>
-          <br>
-          <textarea id="message" cols="40" rows="8" minlength="4" maxlength="335" placeholder="Digite sua mensagem para o Salém aqui."></textarea>
-          <br>
-          <button type="submit">Enviar</button>
-        </fieldset>
-      </form>
-
-      <div>
-        <h3> Para saber mais...<a class="a" href="https://github.com/MaiiNunes" target="_blank">Clique aqui!</a>
-      </div> 
-
-    </div>
+    </main>
+    
+    <aside>
+      <p class="texto">Você pode ter um gatinho virtual que conversa com você.</p>
+        <ul class="texto">
+          <li>Inicie uma conversa;</li>
+          <li>Faça perguntas;</li>
+          <li>Peça opiniões.</li>
+          <li>Tire dúvidas;</li>
+        </ul>
+    </aside>
+   
     <footer>
       <div class="container-footer footer">
         <p>&copy; 2021 Salém </p>
