@@ -24,8 +24,9 @@ header{
 
 h1 {
   display: flex;
-  color: #cbf8e3;
-  text-shadow: 2px 2px 5px #cbf8e3;
+  font-size: 45px;
+  color: #fffef8;
+  text-shadow: 2px 3px 5.5px gold;
   font-family: "Sofia", sans-serif;
   line-height: 2;
   letter-spacing: 1px;
@@ -40,6 +41,7 @@ h1 {
   text-decoration: none;
   border-radius: 30px;
   border-color: #ffba5b;
+  box-shadow: 0 0 6px gold;
   width: 130px;
   line-height: 35px;
   justify-content: center;
@@ -101,24 +103,38 @@ form {
   line-height: 2;
 }
 
-.a {
+.btn-form {
+  background-color: #18184efa;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+  border-color: #ffba5b;
+  box-shadow: 0 0 5px gold;
+  width: 80px;
+  line-height: 25px;
+  justify-content: center;
+}
+
+a {
   color: #ffdc40;
   font-size: 13px;
   padding: 5px;
 
 }
+
 h3 {
-  display: block;
-  background-color: #111138fa;
-  color: #ecda8b;
-  font-size: 13px;
+  background-color: #18184efa;
   font-family: "Merriweather", serif;
+  font-size: 13px;
+  color: #ecda8b;
   text-align: center;
-  border: 2px solid #ffba5b;
+  border: 3px solid #eba23c ;
+  box-shadow: 0 0 6px gold;
   border-radius: 30px;
-  width: 200px;
-  padding: 5px 8px;
-  line-height: 4;
+  width: 300px;
+  line-height: 50px;
+  justify-content: center;
 }
 
 img {
@@ -140,6 +156,8 @@ footer{
   height: 50px;
   display: flex;
   align-items: center;
+  color: #e5e8e881;
+  font-size: 15px;
 }
 
 footer .footer{
