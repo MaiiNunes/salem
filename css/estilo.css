@@ -22,6 +22,11 @@ header{
   justify-content:space-around;
 }
 
+.logo-img{
+  margin-bottom: 15px;
+  width:100%; /*largura da imagem*/
+}
+
 h1 {
   display: flex;
   font-size: 45px;
@@ -58,10 +63,18 @@ h1 {
   
 }
 
-.texto {
-  text-align: center;
+aside{
   color: #ecda8b;
   font-family: "Merriweather", serif;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+aside li:nth-child(odd){
+  color: #ffba5b;
+  background: #34346954;
 }
 
 h2 {
@@ -73,27 +86,6 @@ h2 {
   line-height: 2;
 }
 
-ul{
-  padding: 10px 20px;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-}
-
-li {
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
-ul li::before{
-  align-items: center;
-  border-radius: 30px;
-  width: 4px;
-  height: 4px;
-  background-color: #ffd82a86;
-  margin-right: 5px;
-}
-
 form {
   display: flex;
   color: #866abe;
@@ -101,6 +93,10 @@ form {
   text-align: center;
   font-size: 18px;
   line-height: 2;
+}
+
+input:focus {
+border-color:gold;
 }
 
 .btn-form {
