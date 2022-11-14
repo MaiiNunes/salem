@@ -146,35 +146,23 @@ img {
 }
 
 .container-footer{
+  align-items: center;
   display: flex;
-  max-width: 992px;
   margin: auto;
-  width: 100%;
   min-width: 320px;
 }
 
 footer{
   background-color: #4e545c3a;
+  justify-content: space-between;
   height: 50px;
   display: flex;
-  align-items: center;
-  color: #e5e8e881;
-  font-size: 15px;
-}
-
-footer .footer{
-  justify-content: space-between;
   color: #e5e8e881;
   font-size: 15px;
 }
 
 /* mobile */
 @media(max-width:992px){
-  .flex-container{
-    flex-direction: column;
-    text-align: center;
-  }
-
   #menu{
     flex-direction: column;
     text-align: center;
@@ -189,5 +177,10 @@ footer .footer{
     min-width: 320px;
     margin: auto;
     align-items: center;
+  }
+  
+  .flex-container{
+    text-align: center;
+    justify-content: space-around
   }
 }
