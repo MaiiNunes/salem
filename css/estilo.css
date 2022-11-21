@@ -27,11 +27,6 @@ header{
   justify-content:space-evenly;
 }
 
-.logo-img{
-  margin-bottom: 15px;
-  width:100%; /*largura da imagem*/
-}
-
 h1 {
   display: flex;
   font-size: 45px;
