@@ -66,6 +66,7 @@ main{
   float: left;
 }
 
+/*
 aside{
   display: flex;  
   color: #ecda8b;
@@ -82,7 +83,7 @@ aside{
 aside li:nth-child(odd){
   color: #ffba5b;
   background: #34346954;
-}
+}*/
 
 h2 {
   display: flex;
